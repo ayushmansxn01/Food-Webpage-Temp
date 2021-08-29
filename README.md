@@ -1,2 +1,2 @@
-# Food Weboage Temp
+# Food Webpage Temp
  Demo webpage for food ordering website
