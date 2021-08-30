@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,27 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Online Food Delivery Services | MyOnlineMeal.com</title>
-    <link rel="stylesheet" href="css/basestyle.css">
+    <link rel="stylesheet" href="{% static 'website/css/basestyle.css' %}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Bree+Serif&display=swap" rel="stylesheet">
-<link rel="stylesheet" media="screen and (max-width: 1240px)" href="css/phone.css">
+<link rel="stylesheet" media="screen and (max-width: 1240px)" href="{% static 'website/css/phone.css' %}">
 </head>
 <body>
 
-    <nav id="navbar">
-    <div class="logo">
-        <img src="img/logo3.png" alt="MyOnlineMeal.com">
-    </div>
-
-    <ul>
-        <li class="item"><a href="index.html">Home</a></li>
-        <li class="item"><a href="index.html">Services</a></li>
-        <li class="item"><a href="index.html">Client</a></li>
-        <li class="item"><a href="index.html">Contact Us</a></li> 
-    </ul> 
-    </nav>
+    <section id="paybar">
+        <div class="logo">
+            <img src="{% static 'website/img/logo3.png' %}" alt="MyOnlineMeal.com">
+        </div>
+        <h2>You have to pay ₹<h2>0</h2></h2>
+        <button class="pay">Pay</button>
+        
+        </section>
 
 
     <section id="home">
@@ -35,94 +32,51 @@
 
 
     <section id="services-container">
-        <h1 class="h-primary center">ingredients</h1>
-        <div id="services">
 
-            <div id="bigbox">
-                <div class="box">
-                    <img src="img/pizza.jpg" alt="" >
-                    <h2 class="h-secondary center">Paneer</h2>
-                    <div class="pay">
-                        <button type="submit" class="minus">-</button>
-                        <p> 0 </p><p> gm</p>
-                        <button type="submit" class="add">Add</button>
-                    </div>
-                    
-                </div>
-                <div class="box">
-                    <img src="img/sandwich.jpg" alt="" >
-                    <h2 class="h-secondary center">Butter</h2>
-                    <div class="pay">
-                        <button type="submit" class="minus">-</button>
-                        <p> 0 </p><p> gm</p>
-                        <button type="submit" class="add">Add</button>
-                    </div>
-                </div>
-                
-            </div>
-
-
-            <div id="bigbox">
-            <div class="box">
-                <img src="img/pizza.jpg" alt="" >
-                <h2 class="h-secondary center">Jeera</h2>
-                <div class="pay">
-                    <button type="submit" class="minus">-</button>
-                    <p> 0 </p><p> gm</p>
-                    <button type="submit" class="add">Add</button>
-                </div>
-                
-            </div>
-            <div class="box">
-                <img src="img/sandwich.jpg" alt="" >
-                <h2 class="h-secondary center">Garlic</h2>
-                <div class="pay">
-                    <button type="submit" class="minus">-</button>
-                    <p> 0 </p><p> gm</p>
-                    <button type="submit" class="add">Add</button>
-                </div>
-            </div>
-            <div class="box">
-                <img src="img/delivery.jpg" alt="" >
-                <h2 class="h-secondary center">Termeric</h2>
-                <div class="pay">
-                    <button type="submit" class="minus">-</button>
-                    <p> 0 </p><p> gm</p>
-                    <button type="submit" class="add">Add</button>
-                </div>
-            </div>
-            <div class="box">
-                <img src="img/delivery.jpg" alt="" >
-                <h2 class="h-secondary center">Onion</h2>
-                <div class="pay">
-                    <button type="submit" class="minus">-</button>
-                    <p> 0 </p><p> gm</p>
-                    <button type="submit" class="add">Add</button>
-                </div>
-            </div>
+        
+        <div class="ingredients">
+            <h1 class="h-primary">ingredients</h1>
+            
+<label class="container">Paneer
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Butter
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Onion
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Garlic
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
         </div>
- 
-    </div>
+
+
+
+        <div clas="recipe">
+            <div class="recip-c">
+            <h1 class="h-primary">instructions</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At illum sed veniam commodi molestiae debitis officia eos temporibus quae illo, dolores quibusdam magni tempore, cum ratione placeat assumenda maiores amet recusandae voluptates eaque tempora nihil aliquam! Maxime quaerat quia consectetur. Obcaecati adipisci facere sunt totam officia, cupiditate, enim distinctio quam in ipsum ullam. Dolor commodi ea, officiis, quis incidunt ab odit repellat porro molestias inventore nemo! Tempora.</p>
+        </div>
+
+        </div>
+            
+           
+       
+   
     
     </section>
 
 
     <section class="description">
-        <h1 class="h-primary">Recipe</h1>
-<div class="des">
-        <p class="descenter">London Chef puts a twist on mince pies with this giant, meringue-topped showstopping dessert. Prepare the pastry and filling ahead of time for an easy-to-make sweet that will impress your guests. London Chef puts a twist on mince pies with this giant, meringue-topped showstopping dessert. Prepare the pastry and filling ahead of time for an easy-to-make sweet that will impress your guests. London Chef puts a twist on mince pies with this giant, meringue-topped showstopping dessert. Prepare the pastry and filling ahead of time for an easy-to-make sweet that will impress your guests. Puts a twist on mince pies with this giant, meringue-topped showstopping dessert. Prepare the pastry and filling ahead of time for an easy-to-make sweet that will impress your guests. Prepare the pastry and filling ahead of time for an easy-to-make sweet that will impress your guests. Puts a twist on mince pies with this giant,s Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum, quo sunt nemo sed nihil alias saepe nisi debitis vel fuga sequi necessitatibus est blanditiis dolor possimus recusandae! Necessitatibus quam provident quaerat cumque.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum tempora autem consectetur ad velit explicabo molestias qui, beatae quidem sunt ea obcaecati ducimus suscipit animi amet expedita saepe et, optio alias enim magnam! Neque assumenda doloribus magnam totam cupiditate incidunt qui itaque consequatur illo eveniet quo repellendus, non nisi officia eum, vel quae deleniti maiores quam? Libero, error? Commodi cum blanditiis excepturi iste saepe.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis alias at, non itaque tempore, beatae, officia ullam cum repellendus quis aut! Corporis perferendis, alias expedita dignissimos libero blanditiis quasi! Modi aliquam quae voluptatum quidem distinctio iure ipsam assumenda, laboriosam quibusdam, amet ducimus. Soluta ab nostrum exercitationem? Libero provident maxime minima in tempora iusto placeat beatae temporibus et rerum, sequi assumenda asperiores deleniti similique. Totam magnam exercitationem dolores doloribus qui libero accusantium quasi dolore, saepe quisquam at reprehenderit?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae ullam tempora nemo sequi ea. Ab dolores voluptas quis quos pariatur, dolore, et ullam obcaecati odio voluptates consequatur perferendis aliquid nulla quasi reiciendis accusamus laboriosam neque consectetur quaerat blanditiis quia. Vero suscipit dolores tenetur veniam sed commodi minus, voluptate numquam distinctio dolorem corrupti dolor accusamus possimus nam aliquam! Perspiciatis temporibus maxime libero modi sed asperiores explicabo quod ipsa doloribus voluptatem consequatur, minima laboriosam deleniti iste cumque ipsum sit rem sequi! Et accusamus voluptatum ab perspiciatis ipsa saepe corporis odit eius molestiae culpa repellendus optio est esse amet, eos ad consectetur quas dignissimos, at odio, cupiditate aliquid veritatis dolorem!</p>
-    </div>
-    </section>
+        <h1 class="h-primary"></h1>
 
-    <nav id="paybar">
-        <div class="logo">
-            <img src="img/logo3.png" alt="MyOnlineMeal.com">
-        </div>
-        <h2>You have to pay ₹<h2>0</h2></h2>
-        <button class="pay">Pay</button>
-        
-        </nav>
+
+   
 
 <footer>
     <div class="bottom">
