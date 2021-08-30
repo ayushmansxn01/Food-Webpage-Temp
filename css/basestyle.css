@@ -7,6 +7,8 @@ html{
     scroll-behavior: smooth;
     font-family: 'Baloo Thambi 2', cursive;
 }
+body{
+    background-color:wheat}
 
 /*CSS Variables*/
 :root{
